@@ -1,9 +1,10 @@
 import './globals.css';
 import React from 'react';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'منار الريّس للأثاث والمفروشات',
-  description: 'معرض منار الريّس - فن التفصيل والأثاث الفاخر',
+export const metadata: Metadata = {
+  title: "pianno.home",
+  description: "الموقع الرسمي لـ pianno.home",
 };
 
 export default function RootLayout({
