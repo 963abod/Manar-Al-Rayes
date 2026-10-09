@@ -374,31 +374,45 @@ export default function Hero() {
 
         {/* الناف بار التفاعلي */}
         <header className="fixed top-0 inset-x-0 z-40 flex items-center justify-center p-4 sm:p-6 pointer-events-none">
-          <nav
-            aria-label="التنقل الرئيسي"
-            className="pointer-events-auto relative flex items-center gap-1 rounded-full border border-white/10 bg-black/60 px-2 py-1.5 backdrop-blur-xl shadow-2xl"
-          >
+          <nav className="pointer-events-auto relative flex items-center gap-1 overflow-hidden rounded-full border border-white/10 bg-black/60 px-3 py-1.5 backdrop-blur-xl shadow-2xl">
             {NAV_ITEMS.map((item) => {
-              // التحقق إذا كان الرابط الحالي يطابق مسار الصفحة
               const isActive = pathname === item.href;
 
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`relative rounded-full px-4 py-1.5 text-xs font-medium transition-colors duration-200 ${
+                  className={`relative z-10 rounded-full px-4 py-1.5 text-xs font-medium transition-colors duration-200 ${
                     isActive ? "text-white" : "text-white/60 hover:text-white/90"
                   }`}
                 >
                   {item.label}
-                  {/* الخط التفاعلي يظهر تلقائياً حسب مسار الصفحة الفعلي */}
-                  {isActive && (
-                    <span className="absolute inset-x-2 -bottom-1 h-[2px] rounded-full bg-[#BFA58E] shadow-[0_0_8px_#BFA58E] transition-all duration-300" />
-                  )}
                 </Link>
               );
             })}
+
+            {/* الخط المضيء المتحرك ذهاباً وإياباً */}
+            <span
+              className="pointer-events-none absolute bottom-0 h-[2px] w-16 rounded-full bg-gradient-to-r from-transparent via-[#BFA58E] to-transparent shadow-[0_0_12px_#BFA58E]"
+              style={{
+                animation: "navScan 2.5s ease-in-out infinite alternate",
+              }}
+            />
           </nav>
+
+          {/* حركة الذهاب والإياب المستمرة */}
+          <style>{`
+            @keyframes navScan {
+              0% {
+                left: 0%;
+                transform: translateX(0%);
+              }
+              100% {
+                left: 100%;
+                transform: translateX(-100%);
+              }
+            }
+          `}</style>
         </header>
 
         {/* 5 — copy */}
