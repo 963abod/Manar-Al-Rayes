@@ -53,8 +53,8 @@ function chapterOpacity(p: number, [a, b, c, d]: [number, number, number, number
 
 const NAV = [
   { href: '/products', label: 'المنتجات' },
-  { href: '#about', label: 'من نحن' },
-  { href: '#works', label: 'أعمالنا' },
+  { href: '/about', label: 'من نحن' },
+  { href: '/works', label: 'أعمالنا' },
 ];
 
 function CtaButtons() {
@@ -67,7 +67,7 @@ function CtaButtons() {
         استعرض المنتجات
       </a>
       <a
-        href="#works"
+        href="/works"
         className="rounded-full border border-white/35 bg-white/5 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/15 focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
       >
         أعمالنا
