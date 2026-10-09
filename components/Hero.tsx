@@ -270,7 +270,7 @@ export default function Hero() {
     const onScroll = () => {
       if (!inView) return;
       computeTarget();
-      if (target !== current) ensure();
+      if (Math.abs(target - current) > 0.0001) ensure();
     };
     const onResize = () => {
       window.clearTimeout(resizeTimer);
