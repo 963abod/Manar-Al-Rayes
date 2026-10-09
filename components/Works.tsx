@@ -6,24 +6,28 @@ const PROJECTS = [
     category: "مجالس",
     description: "تفصيل متقن مع أقمشة فاخرة وتوزيع هندسي مريح للمساحة.",
     tag: "تصميم وتنفيذ",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "ديكورات وتكسيات جدارية",
     category: "ديكورات",
     description: "تكسيات جدارية عصرية مع إضاءات خفية تبرز جمالية المكان.",
     tag: "ديكور داخلي",
+    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "ستائر تفصيل راقية",
     category: "ستائر",
     description: "أقمشة مختارة بعناية وتشطيب احترافي يتماشى مع طراز الصالة.",
     tag: "توريد وتركيب",
+    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
   },
   {
     title: "غرفة نوم ماستر مخصصة",
     category: "غرف نوم",
     description: "سرير متكامل مع ظهر تنجيد وخزائن مدمجة حسب أبعاد الغرفة.",
     tag: "تفصيل خاص",
+    image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
@@ -47,7 +51,7 @@ export default function Works() {
           {PROJECTS.map((item, index) => (
             <div
               key={index}
-              className="group flex flex-col justify-between rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-6 backdrop-blur-sm transition-all duration-300 hover:border-[#BFA58E]/40 hover:-translate-y-1"
+              className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-5 backdrop-blur-sm transition-all duration-300 hover:border-[#BFA58E]/40 hover:-translate-y-1"
             >
               <div>
                 <div className="flex items-center justify-between">
@@ -57,8 +61,13 @@ export default function Works() {
                   <span className="text-[11px] text-white/50">{item.tag}</span>
                 </div>
 
-                <div className="my-6 flex aspect-video w-full items-center justify-center rounded-xl bg-neutral-900/60 border border-white/5">
-                  <span className="text-xs text-white/30">معاينة العمل</span>
+                <div className="my-5 relative aspect-video w-full overflow-hidden rounded-xl border border-white/10 bg-neutral-950">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </div>
 
                 <h3 className="text-lg font-bold text-white group-hover:text-[#BFA58E] transition-colors">
