@@ -75,7 +75,7 @@ export default function AboutPage() {
 
             <div className="mt-8">
               <a
-                href="https://wa.me/971547935346?text=%D9%85%D8%1F%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20pianno.home"
+                href={`https://wa.me/971547935346?text=${encodeURIComponent("مرحباً، أود الاستفسار عن خدمات pianno.home")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-xl bg-[#BFA58E] px-6 py-3 text-xs font-bold text-black transition-opacity hover:opacity-90"
