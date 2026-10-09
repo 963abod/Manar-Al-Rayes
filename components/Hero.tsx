@@ -163,17 +163,26 @@ export default function Hero() {
       const dt = Math.min(0.05, (now - lastT) / 1000 || 0.016);
       lastT = now;
 
+      // 1. حساب المسافة المتبقية
       const diff = target - current;
-      current = Math.abs(diff) < 0.0004 ? target : current + diff * (1 - Math.exp(-dt * 11));
+
+      // 2. تخميد أخف لإعطاء انزلاق ناعم مع عتبة إيقاف أدق
+      current = Math.abs(diff) < 0.0001
+        ? target
+        : current + diff * (1 - Math.exp(-dt * 4.8));
+
+      // رسم عناصر الواجهة مع القيمة المُنَعّمة
       paintUI(current);
 
-      let pending = current !== target;
+      // استمرار تدوير الفريمات طالما لم نصل للهدف بعد
+      let pending = Math.abs(target - current) > 0.0001;
 
       if (ready) {
         const idx = Math.round(current * (frames - 1));
+
         if (idx !== lastIdx) {
-          // never queue seeks: wait for the previous one to land
-          if (!video.seeking) {
+          // التحقق من جاهزية الفيديو قبل طلب الفريم التالي
+          if (!video.seeking && video.readyState >= 2) {
             video.currentTime = (idx + 0.5) / FPS;
             lastIdx = idx;
           } else {
@@ -181,6 +190,7 @@ export default function Hero() {
           }
         }
       }
+
       if (pending) raf = requestAnimationFrame(frame);
     };
     const ensure = () => {
