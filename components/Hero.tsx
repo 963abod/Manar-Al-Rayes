@@ -391,25 +391,24 @@ export default function Hero() {
               );
             })}
 
-            {/* الخط المضيء المتحرك ذهاباً وإياباً */}
-            <span
-              className="pointer-events-none absolute bottom-0 h-[2px] w-16 rounded-full bg-gradient-to-r from-transparent via-[#BFA58E] to-transparent shadow-[0_0_12px_#BFA58E]"
-              style={{
-                animation: "navScan 2.5s ease-in-out infinite alternate",
-              }}
-            />
+            {/* شريط المسار للحركة */}
+            <div className="pointer-events-none absolute inset-x-3 bottom-0 h-[2px] overflow-hidden">
+              <span
+                className="block h-full w-12 rounded-full bg-gradient-to-r from-transparent via-[#BFA58E] to-transparent shadow-[0_0_8px_#BFA58E] will-change-transform"
+                style={{
+                  animation: "navScanGpu 2.4s ease-in-out infinite alternate",
+                }}
+              />
+            </div>
           </nav>
 
-          {/* حركة الذهاب والإياب المستمرة */}
           <style>{`
-            @keyframes navScan {
+            @keyframes navScanGpu {
               0% {
-                left: 0%;
-                transform: translateX(0%);
+                transform: translate3d(0%, 0, 0);
               }
               100% {
-                left: 100%;
-                transform: translateX(-100%);
+                transform: translate3d(320%, 0, 0);
               }
             }
           `}</style>
