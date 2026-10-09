@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
-import Works from '@/components/Works';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -9,7 +8,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <About />
-      <Works />
       <Footer />
     </main>
   );
