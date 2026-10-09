@@ -427,11 +427,21 @@ export default function Hero() {
               </div>
             </div>
             {/* finale */}
-            <div ref={(el) => { chapterRefs.current[3] = el; }} style={hidden(3)} className="absolute inset-x-0 bottom-0 z-30 px-6 pb-28 sm:px-12 md:px-16 md:pb-28">
+            <div
+              ref={(el) => { chapterRefs.current[3] = el; }}
+              style={hidden(3)}
+              className="absolute inset-x-0 bottom-0 z-30 px-6 pb-28 sm:px-12 md:px-16 md:pb-28"
+            >
               <div className="max-w-xl">
-                <span className="text-[11px] font-bold uppercase tracking-widest text-[#BFA58E]">منار الريّس</span>
-                <h2 className="mt-2 text-3xl font-extrabold text-white drop-shadow-lg md:text-5xl">زوروا معرضنا</h2>
-                <p className="mt-3 text-sm font-light text-white/75 md:text-base">أثاث فاخر بتفصيل حسب الطلب</p>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-[#BFA58E]">
+                  pianno.home
+                </span>
+                <h2 className="mt-2 text-3xl font-extrabold text-white drop-shadow-lg md:text-5xl">
+                  زوروا معرضنا
+                </h2>
+                <p className="mt-3 text-sm font-light text-white/75 md:text-base">
+                  أثاث فاخر وديكورات بتفصيل حسب الطلب
+                </p>
                 <CtaButtons />
               </div>
             </div>
