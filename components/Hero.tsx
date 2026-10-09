@@ -405,19 +405,19 @@ export default function Hero() {
               className="absolute inset-x-0 bottom-0 z-20 px-6 pb-28 sm:px-12 md:px-16 md:pb-28"
             >
               <div className="max-w-xl">
-                {/* الشعار واسم الموقع الجديدين فوق العنوان */}
-                <div className="mb-4 flex flex-col items-start gap-2">
+                {/* الشعار واسم الموقع في المشهد الأول ليختفوا مع السكرول */}
+                <div className="mb-6 flex flex-col items-start gap-3">
                   <img
                     src="/logo.png"
                     alt="pianno.home"
-                    className="h-14 w-auto object-contain drop-shadow-lg"
+                    className="h-16 w-auto object-contain drop-shadow-xl"
                   />
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#BFA58E]">
-                    pianno.home للأثاث والمفروشات
+                  <span className="text-xs font-bold tracking-widest text-[#BFA58E]">
+                    PIANNO.HOME للأثاث والمفروشات
                   </span>
                 </div>
 
-                <h1 className="mt-1 text-3xl font-extrabold text-white drop-shadow-lg md:text-5xl">
+                <h1 className="mt-2 text-3xl font-extrabold text-white drop-shadow-lg md:text-5xl">
                   فن التفصيل والأثاث الفاخر
                 </h1>
                 <p className="mt-3 text-sm font-light text-white/75 md:text-base">تجوّل في صالة العرض بمجرد التمرير</p>
