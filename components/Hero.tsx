@@ -52,7 +52,7 @@ function chapterOpacity(p: number, [a, b, c, d]: [number, number, number, number
 }
 
 const NAV = [
-  { href: '#products', label: 'المنتجات' },
+  { href: '/products', label: 'المنتجات' },
   { href: '#about', label: 'من نحن' },
   { href: '#works', label: 'أعمالنا' },
 ];
