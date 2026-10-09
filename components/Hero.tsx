@@ -371,14 +371,14 @@ export default function Hero() {
         {/* 4 — header */}
         <header className="pointer-events-none absolute inset-x-0 top-0 z-40 flex items-center justify-between gap-2 px-4 py-4 sm:px-6 sm:py-5">
           <div className="pointer-events-auto flex items-center gap-2.5 rounded-2xl border border-white/10 bg-black/45 px-3 py-2 sm:gap-3 sm:px-4">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-[#BFA58E]/40 bg-[#0F2E28] text-xs font-bold tracking-wider text-[#BFA58E]">
-              MR
-            </div>
-            <div>
-              <p className="text-sm font-bold leading-none tracking-wide text-white">منار الريّس</p>
-              <p className="mt-1 text-[10px] font-medium text-[#BFA58E]">للأثاث والمفروشات</p>
-            </div>
-          </div>
+  <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-[#BFA58E]/40 bg-[#0F2E28] text-xs font-bold tracking-wider text-[#BFA58E]">
+    PH
+  </div>
+  <div>
+    <p className="text-sm font-bold leading-none tracking-wide text-white">pianno.home</p>
+    <p className="mt-1 text-[10px] font-medium text-[#BFA58E]">للأثاث والمفروشات</p>
+  </div>
+</div>
           <nav
             aria-label="التنقل الرئيسي"
             className="pointer-events-auto flex items-center gap-3 rounded-full border border-white/10 bg-black/45 px-4 py-2 text-[11px] text-white/85 sm:gap-6 sm:px-6 sm:text-sm"
