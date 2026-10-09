@@ -368,21 +368,22 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-black/5 to-black/80" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-black/45 via-transparent to-transparent" />
 
-        {/* 4 — header */}
-        <header className="pointer-events-none absolute inset-x-0 top-0 z-40 flex items-center justify-center px-4 py-4 sm:px-6 sm:py-5">
+        {/* الشريط العلوي */}
+        <header className="fixed top-0 inset-x-0 z-40 flex items-center justify-between p-4 sm:p-6 pointer-events-none">
+          {/* كبسولة الروابط الأساسية */}
           <nav
             aria-label="التنقل الرئيسي"
-            className="pointer-events-auto flex items-center gap-1 rounded-full border border-white/10 bg-black/40 px-3 py-1.5 backdrop-blur-md"
+            className="pointer-events-auto flex items-center gap-1 rounded-full border border-white/10 bg-black/40 px-4 py-2 backdrop-blur-md"
           >
-            {NAV.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]"
-              >
-                {link.label}
-              </a>
-            ))}
+            <a href="/products" className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]">
+              المنتجات
+            </a>
+            <a href="/about" className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]">
+              من نحن
+            </a>
+            <a href="/works" className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]">
+              أعمالنا
+            </a>
           </nav>
         </header>
 
