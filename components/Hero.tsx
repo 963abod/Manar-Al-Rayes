@@ -51,10 +51,10 @@ function chapterOpacity(p: number, [a, b, c, d]: [number, number, number, number
   return 0;
 }
 
-const NAV = [
-  { href: '/products', label: 'المنتجات' },
-  { href: '/about', label: 'من نحن' },
-  { href: '/works', label: 'أعمالنا' },
+const NAV_ITEMS = [
+  { label: 'المنتجات', href: '/products' },
+  { label: 'من نحن', href: '/about' },
+  { label: 'أعمالنا', href: '/works' },
 ];
 
 function CtaButtons() {
@@ -90,6 +90,7 @@ export default function Hero() {
   const hintRef = useRef<HTMLDivElement>(null);
   const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [mode, setMode] = useState<'scrub' | 'static'>('scrub');
+  const [activeNav, setActiveNav] = React.useState('المنتجات');
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -368,22 +369,31 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-black/5 to-black/80" />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-black/45 via-transparent to-transparent" />
 
-        {/* الشريط العلوي */}
-        <header className="fixed top-0 inset-x-0 z-40 flex items-center justify-between p-4 sm:p-6 pointer-events-none">
-          {/* كبسولة الروابط الأساسية */}
+        {/* الناف بار التفاعلي */}
+        <header className="fixed top-0 inset-x-0 z-40 flex items-center justify-center p-4 sm:p-6 pointer-events-none">
           <nav
             aria-label="التنقل الرئيسي"
-            className="pointer-events-auto flex items-center gap-1 rounded-full border border-white/10 bg-black/40 px-4 py-2 backdrop-blur-md"
+            className="pointer-events-auto relative flex items-center gap-1 rounded-full border border-white/10 bg-black/60 px-2 py-1.5 backdrop-blur-xl shadow-2xl"
           >
-            <a href="/products" className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]">
-              المنتجات
-            </a>
-            <a href="/about" className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]">
-              من نحن
-            </a>
-            <a href="/works" className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]">
-              أعمالنا
-            </a>
+            {NAV_ITEMS.map((item) => {
+              const isActive = activeNav === item.label;
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setActiveNav(item.label)}
+                  aria-current={isActive ? 'page' : undefined}
+                  className={`relative rounded-full px-4 py-1.5 text-xs font-medium transition-colors duration-200 ${
+                    isActive ? 'text-white' : 'text-white/60 hover:text-white/90'
+                  }`}
+                >
+                  {item.label}
+                  {isActive && (
+                    <span className="absolute inset-x-2 -bottom-1 h-[2px] rounded-full bg-[#BFA58E] shadow-[0_0_8px_#BFA58E] transition-all duration-300" />
+                  )}
+                </a>
+              );
+            })}
           </nav>
         </header>
 
