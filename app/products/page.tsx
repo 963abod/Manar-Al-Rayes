@@ -21,9 +21,11 @@ export default function ProductsPage() {
       <header className="sticky top-0 z-30 border-b border-white/10 bg-[#070b0a]/80 backdrop-blur-md px-4 py-4 sm:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-[#BFA58E]/40 bg-[#0F2E28] text-xs font-bold tracking-wider text-[#BFA58E]">
-              PH
-            </div>
+            <img
+              src="/logo.png"
+              alt="pianno.home"
+              className="h-8 w-auto object-contain"
+            />
             <div>
               <p className="text-sm font-bold leading-none tracking-wide text-white">pianno.home</p>
               <p className="mt-1 text-[10px] font-medium text-[#BFA58E]">للأثاث والمفروشات</p>
