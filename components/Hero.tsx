@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 /* ------------------------------------------------------------------ *
  *  Hero — scroll-driven showroom video
@@ -90,7 +92,7 @@ export default function Hero() {
   const hintRef = useRef<HTMLDivElement>(null);
   const chapterRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [mode, setMode] = useState<'scrub' | 'static'>('scrub');
-  const [activeNav, setActiveNav] = React.useState('المنتجات');
+  const pathname = usePathname();
 
   useEffect(() => {
     const wrap = wrapRef.current;
@@ -376,22 +378,23 @@ export default function Hero() {
             className="pointer-events-auto relative flex items-center gap-1 rounded-full border border-white/10 bg-black/60 px-2 py-1.5 backdrop-blur-xl shadow-2xl"
           >
             {NAV_ITEMS.map((item) => {
-              const isActive = activeNav === item.label;
+              // التحقق إذا كان الرابط الحالي يطابق مسار الصفحة
+              const isActive = pathname === item.href;
+
               return (
-                <a
-                  key={item.label}
+                <Link
+                  key={item.href}
                   href={item.href}
-                  onClick={() => setActiveNav(item.label)}
-                  aria-current={isActive ? 'page' : undefined}
                   className={`relative rounded-full px-4 py-1.5 text-xs font-medium transition-colors duration-200 ${
-                    isActive ? 'text-white' : 'text-white/60 hover:text-white/90'
+                    isActive ? "text-white" : "text-white/60 hover:text-white/90"
                   }`}
                 >
                   {item.label}
+                  {/* الخط التفاعلي يظهر تلقائياً حسب مسار الصفحة الفعلي */}
                   {isActive && (
                     <span className="absolute inset-x-2 -bottom-1 h-[2px] rounded-full bg-[#BFA58E] shadow-[0_0_8px_#BFA58E] transition-all duration-300" />
                   )}
-                </a>
+                </Link>
               );
             })}
           </nav>
