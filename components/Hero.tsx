@@ -395,7 +395,7 @@ export default function Hero() {
         {isStatic ? (
           <div className="absolute inset-x-0 bottom-0 z-20 px-6 pb-16 sm:px-12 md:px-16 md:pb-24">
             <div className="max-w-xl">
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#BFA58E]">منار الريّس للأثاث والمفروشات</span>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#BFA58E]">pianno.home للأثاث والمفروشات</span>
               <h1 className="mt-2 text-4xl font-extrabold leading-tight text-white md:text-6xl">فن التفصيل والأثاث الفاخر</h1>
               <CtaButtons />
             </div>
@@ -405,7 +405,7 @@ export default function Hero() {
             {/* intro */}
             <div ref={(el) => { chapterRefs.current[0] = el; }} style={hidden(0)} className="absolute inset-x-0 bottom-0 z-20 px-6 pb-28 sm:px-12 md:px-16 md:pb-28">
               <div className="max-w-xl">
-                <span className="text-[11px] font-bold uppercase tracking-widest text-[#BFA58E]">منار الريّس للأثاث والمفروشات</span>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-[#BFA58E]">pianno.home للأثاث والمفروشات</span>
                 <h1 className="mt-2 text-4xl font-extrabold leading-tight text-white drop-shadow-lg md:text-6xl">فن التفصيل والأثاث الفاخر</h1>
                 <p className="mt-3 text-sm font-light text-white/75 md:text-base">تجوّل في صالة العرض بمجرد التمرير</p>
               </div>
