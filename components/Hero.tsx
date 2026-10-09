@@ -401,26 +401,31 @@ export default function Hero() {
             {/* المشهد الأول */}
             <div
               ref={(el) => { chapterRefs.current[0] = el; }}
+              className="absolute inset-0 z-20 pointer-events-none"
               style={hidden(0)}
-              className="absolute inset-x-0 bottom-0 z-20 px-6 pb-28 sm:px-12 md:px-16 md:pb-28"
             >
-              <div className="max-w-xl">
-                {/* الشعار واسم الموقع في المشهد الأول ليختفوا مع السكرول */}
-                <div className="mb-6 flex flex-col items-start gap-3">
+              {/* الشعار واسم المعرض: بنصف الجدار تماماً فوق الكنبة */}
+              <div className="absolute top-[28%] inset-x-0 flex flex-col items-center justify-center text-center px-4">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 p-2 shadow-2xl backdrop-blur-md">
                   <img
                     src="/logo.png"
                     alt="pianno.home"
-                    className="h-16 w-auto object-contain drop-shadow-xl"
+                    className="h-full w-full object-contain"
                   />
-                  <span className="text-xs font-bold tracking-widest text-[#BFA58E]">
-                    PIANNO.HOME للأثاث والمفروشات
-                  </span>
                 </div>
+                <span className="mt-3 text-xs font-bold tracking-widest text-[#BFA58E] drop-shadow-md">
+                  PIANNO.HOME للأثاث والمفروشات
+                </span>
+              </div>
 
-                <h1 className="mt-2 text-3xl font-extrabold text-white drop-shadow-lg md:text-5xl">
+              {/* النصوص السفلية كما هي */}
+              <div className="absolute inset-x-0 bottom-0 px-6 pb-28 sm:px-12 md:px-16 md:pb-28">
+                <h1 className="text-3xl font-extrabold text-white drop-shadow-lg md:text-5xl">
                   فن التفصيل والأثاث الفاخر
                 </h1>
-                <p className="mt-3 text-sm font-light text-white/75 md:text-base">تجوّل في صالة العرض بمجرد التمرير</p>
+                <p className="mt-3 text-sm font-light text-white/75 md:text-base">
+                  تجوّل في صالة العرض بمجرد التمرير
+                </p>
               </div>
             </div>
             {/* salon */}
