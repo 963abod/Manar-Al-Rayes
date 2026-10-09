@@ -15,7 +15,7 @@ export const PRODUCTS: Product[] = [
     category: "صالونات",
     description: "تصميم كلاسيكي فاخر بقماش مخملي وقواعد خشب زان مذهب، تفصيل حسب الطلب.",
     price: "حسب الطلب",
-    image: "/images/product-1.jpg",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80",
     featured: true,
   },
   {
@@ -24,7 +24,7 @@ export const PRODUCTS: Product[] = [
     category: "صالونات",
     description: "قماش كتان معالج مقاوم للبقع مع إسفنج عالي الكثافة وقاعدة خشب سويد.",
     price: "حسب الطلب",
-    image: "/images/product-2.jpg",
+    image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
     featured: false,
   },
   {
@@ -33,7 +33,7 @@ export const PRODUCTS: Product[] = [
     category: "غرف طعام",
     description: "سطح رخام طبيعي مع كراسي منجدة بتطريز يدوي وقواعد معدنية متينة.",
     price: "حسب الطلب",
-    image: "/images/product-3.jpg",
+    image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80",
     featured: true,
   },
   {
@@ -42,7 +42,7 @@ export const PRODUCTS: Product[] = [
     category: "غرف نوم",
     description: "سرير كينغ مع ظهر مبطن وإضاءة خفية وخزانة ملابس سحاب مدمجة.",
     price: "حسب الطلب",
-    image: "/images/product-4.jpg",
+    image: "https://images.unsplash.com/photo-1540518614846-7ede433c4ef7?auto=format&fit=crop&w=800&q=80",
     featured: true,
   },
   {
@@ -51,7 +51,7 @@ export const PRODUCTS: Product[] = [
     category: "إكسسوارات وكونسول",
     description: "سطح رخامي أسود مع إطار ستانلس ستيل مطلي بلون برونزي فاخر.",
     price: "حسب الطلب",
-    image: "/images/product-5.jpg",
+    image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=800&q=80",
     featured: false,
   },
 ];
