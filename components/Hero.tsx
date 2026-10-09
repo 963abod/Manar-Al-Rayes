@@ -371,9 +371,11 @@ export default function Hero() {
         {/* 4 — header */}
         <header className="pointer-events-none absolute inset-x-0 top-0 z-40 flex items-center justify-between gap-2 px-4 py-4 sm:px-6 sm:py-5">
           <div className="pointer-events-auto flex items-center gap-2.5 rounded-2xl border border-white/10 bg-black/45 px-3 py-2 sm:gap-3 sm:px-4">
-  <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-[#BFA58E]/40 bg-[#0F2E28] text-xs font-bold tracking-wider text-[#BFA58E]">
-    PH
-  </div>
+  <img
+    src="/logo.svg"
+    alt="pianno.home logo"
+    className="h-9 w-auto object-contain"
+  />
   <div>
     <p className="text-sm font-bold leading-none tracking-wide text-white">pianno.home</p>
     <p className="mt-1 text-[10px] font-medium text-[#BFA58E]">للأثاث والمفروشات</p>
