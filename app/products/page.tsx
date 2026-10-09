@@ -96,7 +96,7 @@ export default function ProductsPage() {
                     {product.price || "حسب الطلب"}
                   </span>
                   <a
-                    href={`https://wa.me/?text=${encodeURIComponent(`مرحباً، أود الاستفسار عن: ${product.name}`)}`}
+                    href={`https://wa.me/971547935346?text=${encodeURIComponent(`مرحباً، أود الاستفسار عن: ${product.name}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="rounded-lg bg-[#BFA58E] px-3.5 py-1.5 text-xs font-bold text-black transition-opacity hover:opacity-90"
