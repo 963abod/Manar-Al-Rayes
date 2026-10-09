@@ -54,6 +54,7 @@ function chapterOpacity(p: number, [a, b, c, d]: [number, number, number, number
 }
 
 const NAV_ITEMS = [
+  { label: 'الرئيسية', href: '/' },
   { label: 'المنتجات', href: '/products' },
   { label: 'من نحن', href: '/about' },
   { label: 'أعمالنا', href: '/works' },
