@@ -61,7 +61,7 @@ function CtaButtons() {
   return (
     <div className="mt-7 flex flex-wrap gap-3">
       <a
-        href="#products"
+        href="/products"
         className="rounded-full bg-[#BFA58E] px-6 py-3 text-sm font-bold text-[#070e0d] shadow-lg transition-colors hover:bg-[#d2bda9] focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
       >
         استعرض المنتجات
