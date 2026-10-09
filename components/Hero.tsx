@@ -397,11 +397,28 @@ export default function Hero() {
           </div>
         ) : (
           <>
-            {/* intro */}
-            <div ref={(el) => { chapterRefs.current[0] = el; }} style={hidden(0)} className="absolute inset-x-0 bottom-0 z-20 px-6 pb-28 sm:px-12 md:px-16 md:pb-28">
+            {/* المشهد الأول */}
+            <div
+              ref={(el) => { chapterRefs.current[0] = el; }}
+              style={hidden(0)}
+              className="absolute inset-x-0 bottom-0 z-20 px-6 pb-28 sm:px-12 md:px-16 md:pb-28"
+            >
               <div className="max-w-xl">
-                <span className="text-[11px] font-bold uppercase tracking-widest text-[#BFA58E]">pianno.home للأثاث والمفروشات</span>
-                <h1 className="mt-2 text-4xl font-extrabold leading-tight text-white drop-shadow-lg md:text-6xl">فن التفصيل والأثاث الفاخر</h1>
+                {/* الشعار واسم الموقع الجديدين فوق العنوان */}
+                <div className="mb-4 flex flex-col items-start gap-2">
+                  <img
+                    src="/logo.png"
+                    alt="pianno.home"
+                    className="h-14 w-auto object-contain drop-shadow-lg"
+                  />
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#BFA58E]">
+                    pianno.home للأثاث والمفروشات
+                  </span>
+                </div>
+
+                <h1 className="mt-1 text-3xl font-extrabold text-white drop-shadow-lg md:text-5xl">
+                  فن التفصيل والأثاث الفاخر
+                </h1>
                 <p className="mt-3 text-sm font-light text-white/75 md:text-base">تجوّل في صالة العرض بمجرد التمرير</p>
               </div>
             </div>
