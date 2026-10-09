@@ -75,27 +75,24 @@ export default function ProductsPage() {
           {filteredProducts.map((product: Product) => (
             <div
               key={product.id}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#BFA58E]/40"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 backdrop-blur-sm transition-all duration-300 hover:border-[#BFA58E]/40 hover:-translate-y-1"
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-900/60">
+              {/* عرض الصورة */}
+              <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-950">
                 <img
                   src={product.image}
                   alt={product.name}
                   loading="lazy"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <span className="absolute right-3 top-3 rounded-full border border-white/10 bg-black/60 px-3 py-1 text-[11px] font-medium text-[#BFA58E] backdrop-blur-sm">
+                <span className="absolute top-3 right-3 rounded-full border border-white/10 bg-black/60 px-3 py-1 text-[11px] font-medium text-[#BFA58E] backdrop-blur-sm">
                   {product.category}
                 </span>
-                {product.featured && (
-                  <span className="absolute left-3 top-3 rounded-full bg-[#BFA58E] px-3 py-1 text-[11px] font-bold text-black">
-                    مميز
-                  </span>
-                )}
               </div>
 
+              {/* تفاصيل المنتج */}
               <div className="flex flex-1 flex-col p-5">
-                <h2 className="text-lg font-bold text-white transition-colors group-hover:text-[#BFA58E]">
+                <h2 className="text-lg font-bold text-white group-hover:text-[#BFA58E] transition-colors">
                   {product.name}
                 </h2>
                 <p className="mt-2 flex-1 text-xs leading-relaxed text-white/70">
@@ -121,6 +118,7 @@ export default function ProductsPage() {
         </div>
       </main>
 
+      {/* الفوتر */}
       <Footer />
     </div>
   );
