@@ -10,13 +10,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* هوية المتجر */}
           <div className="md:col-span-2">
-            <div className="flex items-center gap-2.5">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#BFA58E]/40 bg-[#0F2E28] text-xs font-bold tracking-wider text-[#BFA58E]">
-                PH
-              </div>
+            <div className="flex items-center gap-3">
+              <img
+                src="/logo.png"
+                alt="pianno.home"
+                className="h-10 w-auto object-contain"
+              />
               <div>
-                <p className="text-base font-bold leading-none tracking-wide text-white">pianno.home</p>
-                <p className="mt-1 text-[11px] font-medium text-[#BFA58E]">بيانو هوم للمفروشات والديكورات الداخلية</p>
+                <p className="text-sm font-bold tracking-wide text-white">pianno.home</p>
+                <p className="text-[10px] text-[#BFA58E]">للأثاث والمفروشات الفاخرة</p>
               </div>
             </div>
             <p className="mt-4 max-w-sm text-xs leading-relaxed text-white/60">
