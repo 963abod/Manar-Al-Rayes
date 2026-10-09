@@ -369,25 +369,18 @@ export default function Hero() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-black/45 via-transparent to-transparent" />
 
         {/* 4 — header */}
-        <header className="pointer-events-none absolute inset-x-0 top-0 z-40 flex items-center justify-between gap-2 px-4 py-4 sm:px-6 sm:py-5">
-          <div className="pointer-events-auto flex items-center gap-2.5 rounded-2xl border border-white/10 bg-black/45 px-3 py-2 sm:gap-3 sm:px-4">
-<img
-  src="/logo.png"
-  alt="pianno.home"
-  className="h-8 w-auto object-contain"
-/>
-  <div>
-    <p className="text-sm font-bold leading-none tracking-wide text-white">pianno.home</p>
-    <p className="mt-1 text-[10px] font-medium text-[#BFA58E]">للأثاث والمفروشات</p>
-  </div>
-</div>
+        <header className="pointer-events-none absolute inset-x-0 top-0 z-40 flex items-center justify-center px-4 py-4 sm:px-6 sm:py-5">
           <nav
             aria-label="التنقل الرئيسي"
-            className="pointer-events-auto flex items-center gap-3 rounded-full border border-white/10 bg-black/45 px-4 py-2 text-[11px] text-white/85 sm:gap-6 sm:px-6 sm:text-sm"
+            className="pointer-events-auto flex items-center gap-1 rounded-full border border-white/10 bg-black/40 px-3 py-1.5 backdrop-blur-md"
           >
-            {NAV.map((n) => (
-              <a key={n.href} href={n.href} className="whitespace-nowrap transition-colors hover:text-[#BFA58E] focus:outline-none focus-visible:text-[#BFA58E]">
-                {n.label}
+            {NAV.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-full px-3 py-1 text-xs text-white/80 transition-colors hover:text-[#BFA58E]"
+              >
+                {link.label}
               </a>
             ))}
           </nav>
