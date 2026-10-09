@@ -324,7 +324,7 @@ export default function Hero() {
       <div
         ref={stageRef}
         dir="rtl"
-        className="sticky top-0 h-[100svh] w-full overflow-hidden bg-[#070e0d] select-none"
+        className="sticky top-0 h-[100dvh] w-full overflow-hidden bg-[#070b0a] select-none"
         style={{ contain: 'paint' }}
       >
         {/* 1 — instant blurred placeholder, then the real poster (LCP) */}
