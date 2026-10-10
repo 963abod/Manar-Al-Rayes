@@ -32,8 +32,7 @@ export default function About() {
             <img
               src="/logs.png"
               alt="بيانو هوم"
-              style={{ height: "85px", width: "auto", maxHeight: "none" }}
-              className="mx-auto block shrink-0 object-contain drop-shadow-xl"
+              className="mx-auto block w-44 sm:w-48 h-auto object-contain drop-shadow-xl"
             />
             <h3 className="mt-6 text-xl font-bold text-white">بيانو هوم</h3>
             <p className="mt-2 text-xs text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
