@@ -28,13 +28,13 @@ export default function About() {
             </div>
           </div>
 
-          <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-8 flex flex-col justify-center items-center text-center">
+          <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 px-6 py-6 flex flex-col items-center text-center">
             <img
               src="/logs.png"
               alt="بيانو هوم"
-              className="mx-auto block w-44 sm:w-48 h-auto object-contain drop-shadow-xl"
+              className="mx-auto block h-14 w-auto object-contain drop-shadow-xl"
             />
-            <h3 className="mt-6 text-xl font-bold text-white">بيانو هوم</h3>
+            <h3 className="mt-3 text-xl font-bold text-white">بيانو هوم</h3>
             <p className="mt-2 text-xs text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
             <p className="mt-4 text-xs leading-relaxed text-white/60 max-w-xs">
               مجالس • ديكورات جدارية • ستائر • غرف نوم ماستر
