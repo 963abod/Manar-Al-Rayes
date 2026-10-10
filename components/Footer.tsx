@@ -11,11 +11,13 @@ export default function Footer() {
           {/* هوية المتجر */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <img
-                src="/logo.png"
-                alt="pianno.home"
-                className="h-10 w-auto object-contain"
-              />
+              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white/95 p-1.5 shadow-lg">
+                <img
+                  src="/logs.png"
+                  alt="pianno.home"
+                  className="h-full w-full object-contain"
+                />
+              </div>
               <div>
                 <p className="text-sm font-bold tracking-wide text-white">pianno.home</p>
                 <p className="text-[10px] text-[#BFA58E]">للأثاث والمفروشات الفاخرة</p>
