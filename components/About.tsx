@@ -29,7 +29,7 @@ export default function About() {
           </div>
 
           <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-8 flex flex-col justify-center items-center text-center">
-            <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white/95 p-2 shadow-md">
+            <div className="flex h-24 w-24 items-center justify-center">
               <img
                 src="/logs.png"
                 alt="بيانو هوم"
