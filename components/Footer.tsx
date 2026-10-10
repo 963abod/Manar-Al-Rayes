@@ -11,7 +11,7 @@ export default function Footer() {
           {/* هوية المتجر */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-white/95 p-1.5 shadow-lg">
+              <div className="flex h-11 w-11 items-center justify-center">
                 <img
                   src="/logs.png"
                   alt="pianno.home"
