@@ -28,33 +28,46 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* روابط سريعة */}
-          <div>
+          {/* روابط سريعة — بطاقات بنفس أسلوب بطاقات الصفحة الرئيسية */}
+          <div className="md:col-span-2">
             <h4 className="text-xs font-bold uppercase tracking-widest text-[#BFA58E]">
-              روابط سريعة
+              تصفّح بيانو هوم
             </h4>
-            <ul className="mt-4 space-y-2.5 text-xs text-white/70">
-              <li>
-                <Link href="/" className="transition-colors hover:text-[#BFA58E]">
-                  الرئيسية
-                </Link>
-              </li>
-              <li>
-                <Link href="/products" className="transition-colors hover:text-[#BFA58E]">
-                  معرض المنتجات
-                </Link>
-              </li>
-              <li>
-                <a href="#about" className="transition-colors hover:text-[#BFA58E]">
+            <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <Link
+                href="/about"
+                className="group rounded-xl border border-white/10 bg-[#0F2E28]/30 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#BFA58E]/40"
+              >
+                <span className="block text-sm font-bold text-[#BFA58E] transition-colors group-hover:text-white">
                   من نحن
-                </a>
-              </li>
-              <li>
-                <a href="#works" className="transition-colors hover:text-[#BFA58E]">
-                  سجل أعمالنا
-                </a>
-              </li>
-            </ul>
+                </span>
+                <span className="mt-1 block text-xs leading-relaxed text-white/60">
+                  تعرّف على بيانو هوم وخدماتنا
+                </span>
+              </Link>
+              <Link
+                href="/works"
+                className="group rounded-xl border border-white/10 bg-[#0F2E28]/30 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#BFA58E]/40"
+              >
+                <span className="block text-sm font-bold text-[#BFA58E] transition-colors group-hover:text-white">
+                  أعمالنا
+                </span>
+                <span className="mt-1 block text-xs leading-relaxed text-white/60">
+                  شاهد نماذج من مشاريعنا
+                </span>
+              </Link>
+              <Link
+                href="/products"
+                className="group rounded-xl border border-white/10 bg-[#0F2E28]/30 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#BFA58E]/40"
+              >
+                <span className="block text-sm font-bold text-[#BFA58E] transition-colors group-hover:text-white">
+                  المنتجات
+                </span>
+                <span className="mt-1 block text-xs leading-relaxed text-white/60">
+                  استكشف تشكيلة الأثاث
+                </span>
+              </Link>
+            </div>
           </div>
 
           {/* معلومات التواصل */}
