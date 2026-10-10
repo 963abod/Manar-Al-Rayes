@@ -14,7 +14,7 @@ export default function AboutPage() {
       <header className="sticky top-0 z-30 border-b border-white/10 bg-[#070b0a]/80 backdrop-blur-md px-4 py-4 sm:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="flex h-10 w-10 items-center justify-center">
+            <div className="flex h-12 w-12 items-center justify-center">
               <img
                 src="/logs.png"
                 alt="pianno.home"
@@ -91,8 +91,12 @@ export default function AboutPage() {
 
           {/* بطاقة الهوية الجانبية */}
           <div className="relative mx-auto flex aspect-square w-full max-w-md flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-8 text-center">
-            <div className="flex h-20 w-20 items-center justify-center rounded-2xl border border-[#BFA58E]/40 bg-[#0F2E28] text-2xl font-bold tracking-wider text-[#BFA58E]">
-              PH
+            <div className="flex h-20 w-20 items-center justify-center">
+              <img
+                src="/logs.png"
+                alt="بيانو هوم"
+                className="h-full w-full object-contain"
+              />
             </div>
             <h2 className="mt-6 text-2xl font-bold text-white">بيانو هوم</h2>
             <p className="mt-2 text-sm font-medium text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
