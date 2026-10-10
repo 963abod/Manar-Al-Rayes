@@ -21,7 +21,7 @@ export default function ProductsPage() {
       <header className="sticky top-0 z-30 border-b border-white/10 bg-[#070b0a]/80 backdrop-blur-md px-4 py-4 sm:px-8">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <Link href="/" className="flex items-center gap-2.5">
-            <div className="flex h-20 w-20 items-center justify-center">
+            <div className="flex h-10 w-10 items-center justify-center">
               <img
                 src="/logs.png"
                 alt="pianno.home"
