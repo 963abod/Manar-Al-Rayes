@@ -443,7 +443,7 @@ export default function Hero() {
             >
               {/* الشعار واسم المعرض: بنصف الجدار تماماً فوق الكنبة */}
               <div className="absolute top-[28%] inset-x-0 flex flex-col items-center justify-center text-center px-4">
-                <div className="flex h-[512px] w-[512px] items-center justify-center p-0 drop-shadow-2xl sm:h-[576px] sm:w-[576px]">
+                <div className="flex h-32 w-32 items-center justify-center p-0 drop-shadow-2xl sm:h-36 sm:w-36">
                   <img
                     src="/logo.png"
                     alt="pianno.home"
