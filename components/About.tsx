@@ -29,8 +29,12 @@ export default function About() {
           </div>
 
           <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-8 flex flex-col justify-center items-center text-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#BFA58E]/40 bg-[#0F2E28] text-xl font-bold tracking-wider text-[#BFA58E]">
-              PH
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 p-2 shadow-md">
+              <img
+                src="/logo.png"
+                alt="بيانو هوم"
+                className="h-full w-full object-contain"
+              />
             </div>
             <h3 className="mt-6 text-xl font-bold text-white">بيانو هوم</h3>
             <p className="mt-2 text-xs text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
