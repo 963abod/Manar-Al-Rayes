@@ -15,7 +15,7 @@ export default function Footer() {
                 <img
                   src="/logs.png"
                   alt="pianno.home"
-                  className="w-20 sm:w-24 h-auto shrink-0 object-contain drop-shadow-md"
+                  className="w-28 sm:w-32 h-auto shrink-0 object-contain drop-shadow-lg"
                 />
               </div>
               <div>
