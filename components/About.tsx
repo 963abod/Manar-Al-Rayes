@@ -33,7 +33,7 @@ export default function About() {
               <img
                 src="/logs.png"
                 alt="بيانو هوم"
-                className="h-full w-full object-contain"
+                className="h-20 w-auto object-contain drop-shadow-lg"
               />
             </div>
             <h3 className="mt-6 text-xl font-bold text-white">بيانو هوم</h3>
