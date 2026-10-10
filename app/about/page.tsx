@@ -90,23 +90,18 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* بطاقة الهوية الجانبية */}
-          <div className="relative mx-auto flex aspect-square w-full max-w-md flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-8 text-center">
-            <div className="flex h-20 w-20 items-center justify-center">
-              <img
-                src="/logs.png"
-                alt="بيانو هوم"
-                className="h-full w-full object-contain"
-              />
-            </div>
-            <h2 className="mt-6 text-2xl font-bold text-white">بيانو هوم</h2>
-            <p className="mt-2 text-sm font-medium text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
-            <p className="mt-4 max-w-xs text-xs leading-relaxed text-white/60">
-              تصميم وتنفيذ مجالس • ديكورات • ستائر • غرف نوم
+          {/* بطاقة الهوية الجانبية بنفس مقاس وتنسيق بطاقة الصفحة الرئيسية */}
+          <div className="relative mx-auto w-full max-w-sm overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 px-6 py-6 flex flex-col items-center text-center">
+            <img
+              src="/logs.png"
+              alt="بيانو هوم"
+              className="mx-auto block w-48 sm:w-52 h-auto object-contain drop-shadow-xl"
+            />
+            <h2 className="mt-3 text-xl font-bold text-white">بيانو هوم</h2>
+            <p className="mt-2 text-xs text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
+            <p className="mt-4 text-xs leading-relaxed text-white/60 max-w-xs">
+              مجالس • ديكورات جدارية • ستائر • غرف نوم ماستر
             </p>
-            <span className="mt-6 inline-block rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-[11px] text-white/70">
-              إشراف هندسي وتنفيذ متقن
-            </span>
           </div>
         </div>
       </main>
