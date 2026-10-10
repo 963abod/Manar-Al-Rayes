@@ -402,13 +402,15 @@ export default function Hero() {
             })}
 
             {/* شريط المسار المتحرك من الرئيسية إلى أعمالنا */}
-            <div className="pointer-events-none absolute inset-x-3 bottom-0 h-[2px] overflow-hidden relative">
-              <span
-                className="absolute top-0 h-full w-12 rounded-full bg-gradient-to-r from-transparent via-[#BFA58E] to-transparent shadow-[0_0_8px_#BFA58E] will-change-transform"
-                style={{
-                  animation: "navScanGpu 3s ease-in-out infinite alternate",
-                }}
-              />
+            <div className="pointer-events-none absolute inset-x-3 bottom-0 h-[2px] overflow-hidden">
+              <div className="relative h-full w-full">
+                <span
+                  className="absolute top-0 h-full w-12 rounded-full bg-gradient-to-r from-transparent via-[#BFA58E] to-transparent shadow-[0_0_8px_#BFA58E] will-change-transform"
+                  style={{
+                    animation: "navScanGpu 3s ease-in-out infinite alternate",
+                  }}
+                />
+              </div>
             </div>
           </nav>
         </header>
