@@ -32,7 +32,7 @@ export default function About() {
             <img
               src="/logs.png"
               alt="بيانو هوم"
-              className="mx-auto block h-14 w-auto object-contain drop-shadow-xl"
+              className="mx-auto block w-48 sm:w-52 h-auto object-contain drop-shadow-xl"
             />
             <h3 className="mt-3 text-xl font-bold text-white">بيانو هوم</h3>
             <p className="mt-2 text-xs text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
