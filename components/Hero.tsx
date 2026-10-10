@@ -401,27 +401,16 @@ export default function Hero() {
               );
             })}
 
-            {/* شريط المسار للحركة */}
-            <div className="pointer-events-none absolute inset-x-3 bottom-0 h-[2px] overflow-hidden">
+            {/* شريط المسار المتحرك من الرئيسية إلى أعمالنا */}
+            <div className="pointer-events-none absolute inset-x-3 bottom-0 h-[2px] overflow-hidden relative">
               <span
-                className="block h-full w-12 rounded-full bg-gradient-to-r from-transparent via-[#BFA58E] to-transparent shadow-[0_0_8px_#BFA58E] will-change-transform"
+                className="absolute top-0 h-full w-12 rounded-full bg-gradient-to-r from-transparent via-[#BFA58E] to-transparent shadow-[0_0_8px_#BFA58E] will-change-transform"
                 style={{
-                  animation: "navScanGpu 2.4s ease-in-out infinite alternate",
+                  animation: "navScanGpu 3s ease-in-out infinite alternate",
                 }}
               />
             </div>
           </nav>
-
-          <style>{`
-            @keyframes navScanGpu {
-              0% {
-                transform: translate3d(0%, 0, 0);
-              }
-              100% {
-                transform: translate3d(320%, 0, 0);
-              }
-            }
-          `}</style>
         </header>
 
         {/* 5 — copy */}
