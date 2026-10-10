@@ -24,7 +24,7 @@ export default function ProductsPage() {
             <img
               src="/logs.png"
               alt="pianno.home"
-              className="w-16 sm:w-20 h-auto shrink-0 object-contain drop-shadow-md"
+              className="w-32 sm:w-36 h-auto shrink-0 object-contain drop-shadow-md"
             />
             <div>
               <p className="text-sm font-bold leading-none tracking-wide text-white">pianno.home</p>
