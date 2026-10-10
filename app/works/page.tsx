@@ -42,29 +42,31 @@ export default function WorksPage() {
   return (
     <div className="min-h-screen bg-[#070b0a] text-white selection:bg-[#BFA58E] selection:text-black" dir="rtl">
       {/* شريط علوي */}
-      <header className="sticky top-0 z-30 border-b border-white/10 bg-[#070b0a]/80 backdrop-blur-md px-4 py-4 sm:px-8">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="flex h-12 w-12 items-center justify-center">
-              <img
-                src="/logs.png"
-                alt="pianno.home"
-                className="h-full w-full object-contain"
-              />
-            </div>
-            <div>
-              <p className="text-sm font-bold leading-none tracking-wide text-white">pianno.home</p>
-              <p className="mt-1 text-[10px] font-medium text-[#BFA58E]">للأثاث والمفروشات</p>
-            </div>
-          </Link>
-
-          <Link
-            href="/"
-            className="rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium text-white/80 transition-colors hover:border-[#BFA58E] hover:text-[#BFA58E]"
-          >
-            الرئيسية ←
-          </Link>
+      <header className="flex items-center justify-between px-4 py-3 sm:px-6">
+        {/* كتلة الشعار والاسم متلاصقين بأقصى اليسار */}
+        <div className="flex items-center gap-2.5 shrink-0">
+          <img
+            src="/logs.png"
+            alt="pianno.home"
+            className="w-28 sm:w-32 h-auto shrink-0 object-contain drop-shadow-md"
+          />
+          <div className="flex flex-col text-left">
+            <span className="text-sm sm:text-base font-bold leading-tight text-white">
+              pianno.home
+            </span>
+            <span className="text-[10px] sm:text-xs text-[#BFA58E]">
+              للأثاث والمفروشات
+            </span>
+          </div>
         </div>
+
+        {/* زر الرئيسية بأقصى الجهة المقابلة */}
+        <Link
+          href="/"
+          className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-white backdrop-blur-md hover:bg-white/10 transition-colors"
+        >
+          الرئيسية ←
+        </Link>
       </header>
 
       {/* المحتوى الرئيسي */}
