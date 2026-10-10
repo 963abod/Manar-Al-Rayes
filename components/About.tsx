@@ -29,13 +29,12 @@ export default function About() {
           </div>
 
           <div className="relative mx-auto aspect-square w-full max-w-md overflow-hidden rounded-2xl border border-white/10 bg-[#0F2E28]/20 p-8 flex flex-col justify-center items-center text-center">
-            <div className="flex h-24 w-24 items-center justify-center">
-              <img
-                src="/logs.png"
-                alt="بيانو هوم"
-                className="h-20 w-auto object-contain drop-shadow-lg"
-              />
-            </div>
+            <img
+              src="/logs.png"
+              alt="بيانو هوم"
+              style={{ height: "85px", width: "auto", maxHeight: "none" }}
+              className="mx-auto block shrink-0 object-contain drop-shadow-xl"
+            />
             <h3 className="mt-6 text-xl font-bold text-white">بيانو هوم</h3>
             <p className="mt-2 text-xs text-[#BFA58E]">للمفروشات والديكورات الداخلية</p>
             <p className="mt-4 text-xs leading-relaxed text-white/60 max-w-xs">
